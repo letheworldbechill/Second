@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raumpsychologie v3</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Raumpsychologie v3</h1>
+    <nav id="top-nav" class="top-nav">
+      <button data-route="/intro">Intro</button>
+      <button data-route="/resonanz">Resonanz</button>
+      <button data-route="/bindung">Bindung</button>
+      <button data-route="/wohnung">Wohnung</button>
+      <button data-route="/raumscan">RaumScan</button>
+      <button data-route="/restladung">Restladung</button>
+      <button data-route="/minireset">Mini‑Reset</button>
+      <button data-route="/musterarchiv">Muster‑Archiv</button>
+      <button data-route="/rahmung">Rahmung</button>
+    </nav>
+    <div class="toolbar">
+      <button id="btn-export" title="Daten exportieren">Export</button>
+      <button id="btn-import" title="Daten importieren">Import</button>
+      <input type="file" id="file-import" accept="application/json" style="display:none" />
+    </div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="app-footer">
+    <small>Offline‑fähig · Keine Tracker · v3</small>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
